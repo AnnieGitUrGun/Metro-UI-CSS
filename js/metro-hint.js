@@ -5,7 +5,7 @@
 
         options: {
             position: "bottom",
-            background: '#FFFCC0',
+            background: '#FFFFFF',
             shadow: false,
             border: false,
             _hint: undefined
