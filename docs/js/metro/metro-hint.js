@@ -5,9 +5,9 @@
 
         options: {
             position: "bottom",
-            background: '#FFFCC0',
-            shadow: false,
-            border: false,
+            background: '#FFFFFF',
+            shadow: true,
+            border: true,
             _hint: undefined
         },
 
