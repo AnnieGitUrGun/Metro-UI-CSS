@@ -17,6 +17,7 @@
             title: '',
             content: '',
             flat: false,
+            theme: '',
             shadow: false,
             overlay: false,
             width: 'auto',
@@ -25,7 +26,9 @@
             padding: false,
             overlayClickClose: true,
             sysButtons: {
-                btnClose: true
+                btnClose: true,
+                btnOK: true,
+                btnCancel: true
             },
             onShow: function(_dialog){},
             sysBtnCloseClick: function(event){},
@@ -39,7 +42,6 @@
             }
         }, params);
 
-        var _overlay, _window, _caption, _content;
         var _overlay, _window, _caption, _content, _footer;
 
         _overlay = $("<div/>").addClass("metro window-overlay");
@@ -52,6 +54,10 @@
 
         _window = $("<div/>").addClass("window");
         if (params.flat) _window.addClass("flat");
+        if (params.theme == 'lime') _window.addClass("lime");
+        if (params.theme == 'red') _window.addClass("red");
+        if (params.theme == 'blue') _window.addClass("blue");
+        if (params.theme == 'orange') _window.addClass("orange");
         if (params.shadow) _window.addClass("shadow").css('overflow', 'hidden');
         _caption = $("<div/>").addClass("caption");
         _content = $("<div/>").addClass("content");
